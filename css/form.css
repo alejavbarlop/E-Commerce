@@ -1,0 +1,328 @@
+html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #E5E5E5;
+    font-size: 10px;
+    font-family: 'Raleway';
+}
+/* Web View */
+.header {
+    width: 100vw;
+    height: 10vh;
+    display:flex;
+    align-items: center;
+    background-color: white;
+}
+.logo-box {
+    width: 23vw;
+    justify-self: left;
+}
+.logo {
+    width: 250px;
+    height: 50px;
+    margin-left: 20rem;
+}
+.search-box {
+    width: 50vw;
+}
+.search {
+    width: 350px;
+    height: 30px;
+    margin-left: 15rem;
+    border: none;
+    border-radius: 20px;
+    background-color: lightgrey;
+    opacity: 50%;
+}
+.admin-box {
+    width: 25vw;
+}
+.admin {
+    border:1px solid #2A7AE4;
+    padding: 1rem 4rem 1rem 4rem;
+    text-decoration: none;
+    font-size: 11px;
+    color:#2A7AE4;
+}
+.login {
+    width: 100vw;
+    height: 45vh;
+}
+.logued {
+    width: 100vw;
+    height: 135vh;
+}
+.info-log-box {
+    width: 100vw;
+    height: 5vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display:flex;
+    justify-content: space-between;
+}
+.logued-info {
+    width: 50%;
+    padding-top: 1rem;
+    margin-left: 7.5rem;
+    font-size: 20px;
+    font-weight: bold;
+    color: slategrey;
+}
+.add-btn {
+    width: 150px;
+    margin-right: 9rem;
+    background-color:#2A7AE4;
+    padding: 1rem 4rem 1rem 4rem;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bolder;
+    color:white;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 30vw;
+    max-height: 25vh;
+    padding-left: 35vw;
+    padding-top: 3vh;
+    text-align: center;
+}
+.form label {
+    font-size: 15px;
+    font-weight: bolder;
+    padding-bottom: 1rem;
+}
+.form input {
+    width: 400px;
+    align-self: center;
+    margin-bottom: 2vh;
+    border: none;
+    box-shadow: 0 2px lightgrey;
+    outline: none;
+}
+.invalid-input {
+    border: 1px solid red;
+    opacity: 1;
+    background-color: lightpink;
+}
+.notify-Email {
+    display: none;
+    margin-top: 1em;
+    margin-left: 48rem;
+    font-size: 15px;
+    width: 400px;
+    text-align: center;
+    align-content: center;
+    color: red;
+    border: 5px solid lightpink;
+    background-color: lightpink;
+}
+#btn-log {
+    width: 400px;
+    height: 15rem;
+    text-align: center;
+    align-self: center;
+    border: none;
+    background-color: #2A7AE4;
+    color:white;
+}
+.products {
+    justify-content: center;
+    padding: 1rem 1rem 5rem 6rem;
+}
+.products-items {
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+}
+.contact {
+    width: 100vw;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    background-color: #EAF2FD;
+}
+.logo-box2 {
+    width: 40vw;
+    justify-self: left;
+}
+.order {
+    padding-right: 15rem;
+    margin-bottom: 1.5rem;
+}
+.order a {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 5rem;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+.contact-form label {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.contact-form input {
+    border:none;
+    margin-bottom: 15px;
+    width: 400px;
+    height: 40px;
+    box-shadow: 0 2px lightgrey;
+}
+#message {
+    height: 60px;
+}
+#submit {
+    width: 150px;
+    box-shadow: none;
+    background-color: #2A7AE4;
+    color: white;
+}
+.footer {
+    height: 4vh;
+    background-color: white;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 15px;
+}
+/* Tablet View */
+@media screen and (max-width:768px) {
+    .login {
+        height: 30vh;
+    }
+    .logo-box {
+        width: 17vw;
+    }
+    .logo {
+        width: 150px;
+        height: 30px;
+        margin-left: 5rem;
+    }
+    .search-box {
+        padding-right: 6rem;
+        padding-left: 0;
+        justify-content: left;
+    }
+    .search {
+        width: 200px;
+    }
+    .logued {
+        height: 140vh;
+    }
+    .logued-info {
+        margin-left: 7rem;
+    }
+    .add-btn {
+        margin-right: 6.5rem;
+    }
+    .products {
+        padding-bottom: 1rem;
+        padding-left: 4rem;
+    }
+    .products-items {
+        flex-wrap: wrap;
+    }
+    .items {
+        padding-bottom: 1rem;
+    }
+    .form input {
+        width: 600px;
+        height: 50px;
+    }
+    #btn-log {
+        width: 600px;
+        height: 50px;
+    }
+    .contact {
+        height: 30vh;
+    }
+    .order {
+        padding-right: 5rem;
+    }
+    .contact-form {
+        margin-right: 5rem;
+    }
+    .contact-form input {
+        width: 250px;
+    }
+}
+/* Mobile View */
+@media screen and (max-width:360px) {
+    .login {
+        height: 40vh;
+    }
+    .logo {
+        width: 100px;
+        height: 20px;
+        margin-left: 1rem;
+    }
+    .logo-box {
+        width: 1%;
+    }
+    .search-box {
+        width: 17%;
+    }
+    .search {
+        padding-left: 0px;
+        width: 50px;
+    }
+    .admin-box {
+        width: 20%;
+        padding-left: 11rem;
+    }
+    .logued {
+        height: 86%;
+    }
+    .info-log-box {
+        flex-direction: column;
+    }
+    .logued-info {
+        width: 100%;
+        margin-left: 3.5rem;
+        margin-bottom: 1rem;
+    }
+    .add-btn {
+        margin-left: 6rem;
+    }
+    .products {
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+    }
+    .items {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+    .form input {
+        width: 300px;
+        height: 50px;
+    }
+    #btn-log {
+        width: 300px;
+        height: 50px;
+    }
+    .contact {
+        height: 65vh;
+        flex-direction: column;
+    }
+    .logo-box2 {
+        width: 25vw;
+        margin-right: 100px;
+        padding-top: 20px;
+    }
+    .order {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        padding-left: 80px;
+    }
+    .contact-form {
+        margin-left: 5rem;
+    }
+    .contact-form input {
+        width: 250px;
+    }
+}

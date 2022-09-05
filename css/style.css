@@ -1,0 +1,279 @@
+html {
+    margin: 0;
+    padding: 0;
+    background: #F5F5F5;
+    display: flex;
+    font-size: 10px;
+    font-family: 'Raleway';
+}
+/* Web View */
+.start {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.start div {
+    width: 30vw;
+}
+.logo {
+    width: 200px;
+    height: 50px;
+    padding-left: 7rem;
+}
+.search-box {
+    padding-left: 3vw;
+}
+.search-box input {
+    width: 25vw;
+    height: 5vh;
+    background-color: lightgrey;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+}
+.login-box {
+    padding-left: 25vw;
+}
+.login {
+    width: 30px;
+    border:1px solid #2A7AE4;
+    padding: 1rem 4rem 1rem 4rem;
+    text-decoration: none;
+    font-size: 11px;
+    color:#2A7AE4;
+}
+.banner{
+    position:relative;
+    display: inline-block;
+    text-align: left;
+}
+.banner img {
+    width: 100vw;
+    height: 50vh;
+}
+.banner h1 {
+    font-size: 3rem;
+    color:white;
+    margin: 1rem;
+    position:absolute;
+    top: 60%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+}
+.banner p {
+    font-size: 1.5rem;
+    color:white;
+    margin: 1rem;
+    position:absolute;
+    top: 70%;
+    left: 23.8rem;
+    transform: translate(-50%, -50%);
+}
+.banner a {
+    font-size: 1.5rem;
+    color:white;
+    background-color: #2A7AE4;
+    margin: 1rem;
+    padding: 1rem;
+    position:absolute;
+    top: 80%;
+    left: 11.4rem;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+}
+.products h1 {
+    width: 90%;
+    padding-top: 1rem;
+    margin-left: 6rem;
+    font-size: 30px;
+    font-weight: bold;
+    color: slategrey;
+}
+.products h3 {
+    text-align: right;
+    margin-right: 10rem;
+    font-size: 15px;
+}
+.link {
+    text-decoration: none;
+    color: #2A7AE4;
+    font-weight: bolder;
+}
+.items {
+    justify-content: center;
+    padding: 1rem 5rem 5rem 5rem
+}
+.products-items {
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+}
+.view {
+    color:#2A7AE4;
+    text-decoration: none;
+}
+.contact {
+    width: 100vw;
+    height: 40vh;
+    font-size: medium;
+    display: flex;
+    background: #EAF2FD;
+    align-items: center;
+}
+.contact img{
+    width: 200px;
+    height: 50px;
+    padding-right: 10rem;
+}
+.order {
+    padding-right: 5vw;
+    margin:20px;
+}
+.order a{
+    text-decoration: none;
+    color:black
+}
+.form input{
+    display: flex;
+    flex-direction: column;
+    border:none;
+    margin: 15px;
+    width: 400px;
+    height: 40px;
+}
+.form label {
+    margin:15px;
+    font-size:10px
+}
+#message{
+    height: 80px;
+}
+#submit {
+    max-width: 110px;
+    max-height: 40px;
+    height: 40px;
+    background-color: #2A7AE4;
+    color: white;
+}
+.footer {
+    height: 10vh;
+    padding-top:20px;
+    align-items: center;
+    text-align: center;
+}
+/*Tablet View*/
+@media screen and (max-width: 768px) {
+    .start {
+        justify-content: space-evenly;
+        width: 90vw;
+    }
+    .start img {
+        margin-left: 5rem;
+    }
+    .start input {
+        margin-left: 10rem;
+    }
+    .start a {
+        margin-right: 7rem;
+    }
+    .banner img {
+        height: 25vh;
+    }
+    .banner h1 {
+        top: 40%;
+        left: 20.5rem;
+    }
+    .banner p {
+        top: 55%;
+        left: 23.7rem;
+    }
+    .banner a {
+        top: 75%;
+        left: 11.5rem;
+    }
+    .products-items {
+        flex-wrap: wrap;
+    }
+    .products-items li {
+        margin-bottom: 2rem;
+        margin-right: 2rem;
+    }
+    .products h1 {
+        margin-left: 7.5rem;
+    }
+    .contact {
+        height: 20%;
+        flex-direction: column;
+    }
+    .contact ul {
+        margin-left: 10rem;
+    }
+}
+/*Mobile View*/
+@media screen and (max-width: 414px) {
+    .start {
+        width: 65vw;
+    }
+    .start img {
+        width: 80%;
+        height: auto;
+    }
+    .start input {
+        width: 120px;
+        margin-left: 12rem;
+    }
+    .start a {
+        margin-left: 3rem;
+        margin-bottom: 1rem;
+    }
+    .banner img {
+        height: 30vw;
+        opacity: 150%;
+    }
+    .banner h1 {
+        width: 50vw;
+        top: 40%;
+        left: 20rem;
+        font-size: 20px;
+        font-weight: bolder;
+        color:white;
+    }
+    .banner p {
+        width: 300px;
+        top: 52%;
+        left: 24.8rem;
+        font-size: 11px;
+        color:white;
+    }
+    .banner a {
+        top: 73%;
+        left: 15.2rem;
+    }
+    .products-items {
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
+    .products-items li {
+        margin-bottom: 2rem;
+    }
+    .products h1 {
+        margin-left: 13.5rem;
+    }
+
+    .contact {
+        height: 10%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .contact img {
+        width: 100px;
+        height: 25px;
+    }
+    .contact ul {
+        margin-left: 10rem;
+    }
+    .footer h3 {
+        margin-right: 4rem;
+    }
+}

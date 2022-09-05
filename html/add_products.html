@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>E-Commerce</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/form.css">
+</head>
+<header class="header">
+	<div class="logo-box">
+		<img class="logo" src="../img/alura_logo.png" alt="logo">
+	</div>
+	<div class="search-box">
+		<input class="search" type="text" name="search" placeholder=" Buscar?">
+	</div>
+	<div class="admin-box">
+		<a class="admin" href="./html/login.html">Menu</a>
+	</div>
+</header>
+<body>
+	<section id="login" class="login">
+		<form id="form" class="form">
+			<label id="label">Agregar Nuevo Producto</label>
+			<input id="url" type="url" name="url" placeholder="URL de Imagen">
+			<input id="category" type="text" name="category" placeholder="Categoria">
+			<input id="product" type="text" name="product" placeholder="Nombre del Producto">
+			<input id="price" type="text" name="price" placeholder="Precio del Producto">
+			<input id="description" type="text" name="description" placeholder="Descripción del Producto">
+			<input id="btn-log" VALUE="Agregar Producto" type="submit" name="enter">
+		</form>
+		<div>
+			<p id="notify-Email" class="notify-Email">El email o el password no son validos.</p>
+		</div>
+	</section>
+	<section class="contact">
+		<div class="logo-box2">
+			<img class="logo" src="../img/alura_logo.png" alt="foot-logo">
+		</div>
+		<div class="info-box">
+			<ul class="info">
+				<li class="order"><a href="">Quienes Somos</a></li>
+				<li class="order"><a href="">Política de Privacidad</a></li>
+				<li class="order"><a href="">Programa de Fidelidad</a></li>
+				<li class="order"><a href="">Nuestras Tiendas</a></li>
+				<li class="order"><a href="">Quiero ser Franquiciado</a></li>
+				<li class="order"><a href="">Anúncie aquí</a></li>
+			</ul>
+		</div>
+		<div>
+			<form class="contact-form">
+				<label>Habla con nosotros</label>
+				<input id="name" type="text" name="name" placeholder=" Nombre y Apellido" required>
+				<input id="message" type="text" name="message" placeholder=" Escribe tu mensaje" required>
+				<input id="submit" value="Enviar Mensaje" type="submit" name="submit" required>
+			</form>
+		</div>
+	</section>
+</body>
+<footer class="footer">
+	<h3>Copyright - SKRAPIX 2022</h3>
+</footer>
+<script src="../js/script.js"></script>
+</html>
